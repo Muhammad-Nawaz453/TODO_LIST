@@ -3,14 +3,14 @@
 import { todo } from 'node:test';
 import { useState } from 'react'
 
-interface Todo {
+interface todo {
     id: number;
     task: string;
     completed: boolean;
 }
 
 const TodoList = () => {
-  const [ todos, setTodos ] = useState<Todo[]>([]);
+  const [ todos, setTodos ] = useState<todo[]>([]);
   const [ inputValue, setInputValue ] = useState<string>("");
   
   //add Task
